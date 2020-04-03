@@ -1,14 +1,14 @@
 Implementation of VWAP algorithm with simulation tool
 
 It includes:
-(1) divide trade horizon into predefined length interval
-    and target to fill target quantity indicated on the volume profile
-(2) send passive slice in the beginning of each interval
-(3) Passive slice peg to passive touch
-(4) Cross passive slice when crossing time is reached
-(5) VWAP logic run between start time and end time only
-(6) Support three target curve ( low, desire, upper) use by different urgent setting
-(7) build simulation tool to run vwap logic in second interval
+(1) Divide trade horizon into trade intervals with pre-defined length.
+    Interval has target filled quantity which is calculated based on given volume profile
+(2) Algo send passive slice in the beginning of each trade interval (price improvement feature)
+(3) Algo peg passive slice to passive touch.
+(4) Algo amend passive slice to cross the spread when crossing time is reached
+(5) VWAP logic active between start time and end time only
+(6) Support three target curve (low, desire, upper) which is used based on Urgent setting
+(7) Build simulation tool to run vwap logic in second interval
 (8) Log algo activities when simulation is running
 
 
